@@ -158,6 +158,9 @@ span.orange {
 	margin-top: 15px;
 	letter-spacing: 1px;
 }
+.secondary:hover {
+	background-color: #d5a700;
+}
 .alert {
 	background-color: #ff4a3d;
 	color: white;
@@ -171,8 +174,8 @@ span.orange {
 	margin-top: 15px;
 	letter-spacing: 1px;
 }
-.secondary:hover {
-	background-color: #d5a700;
+.alert:hover {
+	background-color: #c01509;
 }
 .twoColumn {
 	display: flex;
