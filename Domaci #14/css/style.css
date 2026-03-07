@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.userInfo,
+.userInfo th,
+.userInfo td {
+	border: 1px solid #ababab;
+	border-collapse: collapse;
+}
+.userInfo th {
+	background-color: beige;
+}
