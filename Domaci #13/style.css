@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.w-45 {
+	width: 45%;
+}
+.w-10 {
+	width: 10%;
+}
+.blueBgWinter {
+	background-color: #497c9d;
+}
+.flex {
+	display: flex;
+}
+.vh-100 {
+	height: 100vh;
+}
+.leftSideImg {
+	width: 100%;
+	height: 100%;
+}
+.rotate {
+	transform: rotate(90deg);
+	white-space: nowrap;
+	margin-top: 550px;
+	font-size: 3rem;
+	text-align: center;
+	align-items: center;
+	text-shadow: 0px 1px 0px #333;
+	transition: 1s ease;
+}
+.rotate:hover {
+	color: wheat;
+	cursor: pointer;
+}
+.rightContent {
+	padding: 4.5rem;
+}
+.rightContent h1 {
+	font-size: 2.5rem;
+	/* border-style: solid;
+	border-width: 0px 0px 5px 0px; */
+}
+.rightContent p {
+	font-size: 1.5rem;
+}
+.hrLine {
+	height: 5px;
+	background: black;
+	border: 0;
+	margin: 10px 0;
+	width: 100%;
+	transition: width 1s ease;
+}
+.hrLine:hover {
+	width: 10%;
+}
+@media only screen and (max-width: 640px) {
+	.column-mob {
+		flex-direction: column;
+	}
+	.w-10,
+	.w-45 {
+		width: 100%;
+	}
+	.rotate {
+		transform: rotate(0deg);
+		margin-top: 0px;
+		text-align: center;
+		padding: 10px;
+	}
+	.rightContent {
+		padding: 0px;
+		margin-top: 10px;
+	}
+}
