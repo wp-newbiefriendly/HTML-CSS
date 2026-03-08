@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/checkout.css" />
+	</head>
+
+	<body>
+		<form class="orderForm">
+			<div class="formRow">
+				<label for="ime">Ime:</label>
+				<input id="ime" type="text" placeholder="Unesite vase ime" required />
+			</div>
+
+			<div class="formRow">
+				<label for="adresa">Adresa:</label>
+				<input id="adresa" type="text" placeholder="Unesite godine" required />
+			</div>
+
+			<div class="formRow">
+				<label for="email">Email:</label>
+				<input id="email" type="email" placeholder="Unesite email" required />
+			</div>
+
+			<div class="formRow">
+				<label>Odaberite grad:</label>
+				<select>
+					<option disabled selected>Izaberite grad</option>
+					<option>Beograd</option>
+					<option>Novi Sad</option>
+				</select>
+			</div>
+
+			<div class="payment">
+				<p>Odaberite nacin placanja</p>
+
+				<label>
+					<input type="radio" name="payment" value="card" checked />
+					Kreditnom karticom
+				</label>
+
+				<label>
+					<input type="radio" name="payment" value="cash" />
+					Pouzecem
+				</label>
+			</div>
+
+			<div class="subMail">
+				<input id="mailSubcription" type="checkbox" />
+				<label for="mailSubcription">
+					Zelim da primam mejlove sa ponudama
+				</label>
+			</div>
+
+			<div class="formRow">
+				<input class="sentBtn" type="submit" value="Posalji email" />
+			</div>
+		</form>
+	</body>
+</html>
