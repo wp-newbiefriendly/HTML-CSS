@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.kvadrat {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	animation-name: PromenaBoje;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.animacija {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	animation-name: parcijalnaAnimacija;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+.slider {
+	width: 50px;
+	height: 50px;
+	background-color: aqua;
+}
+.slider:hover {
+	animation-name: sliderAnimacija;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+@keyframes sliderAnimacija {
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		margin-left: 100px;
+	}
+}
+@keyframes parcijalnaAnimacija {
+	0% {
+		background-color: green;
+	}
+	15% {
+		background-color: red;
+	}
+	20% {
+		background-color: yellow;
+	}
+	45% {
+		background-color: purple;
+	}
+	100% {
+		background-color: orange;
+	}
+}
+
+@keyframes PromenaBoje {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: yellow;
+		border-radius: 50%;
+	}
+}
